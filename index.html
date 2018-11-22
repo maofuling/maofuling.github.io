@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <title>jokerLi-web学习</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="jokerLi-web学习">
+<meta property="og:url" content="https://maofuling.github.io/maofuling.github.io/index.html">
+<meta property="og:site_name" content="jokerLi-web学习">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jokerLi-web学习">
+  
+  
+    <link rel="icon" href="/maofuling.github.io/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/maofuling.github.io/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src="//push.zhanzhang.baidu.com/push.js"></script>
+</head></html>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/maofuling.github.io/" title="jokerLi-web学习" rel="home">jokerLi-web学习</a>
+      </h1>
+      
+        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+        <h2 class="site-description"><script>hitokoto();</script></h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/maofuling.github.io/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/maofuling.github.io/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main">
+  
+    <article id="post-timeBeautiful" class="post-timeBeautiful post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/maofuling.github.io/2018/11/22/timeBeautiful/">timebeautiful</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/timeBeautiful/" data-id="cjoslxtw300017stdq3q9px7y" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h1><h2 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h2><ol>
+<li><p>标签</p>
+<ol>
+<li><defs>:引用的元素容器</defs></li>
+<li><p><path>:定义路径</path></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">属性:</span><br><span class="line">  1. d=&quot;定义路径指令&quot;</span><br><span class="line">       pathLength=&quot;如果存在，路径将进行缩放，以便计算各点相当于此值的路径长度&quot;</span><br><span class="line">  2. transform=&quot;转换列表&quot;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><svg>:创建svg文档片段<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br/><span class="line">2</span><br/><span class="line">3</span><br/><span class="line">4</span><br/><span class="line">5</span><br/><span class="line">6</span><br/><span class="line">7</span><br/><span class="line">8</span><br/><span class="line">9</span><br/><span class="line">10</span><br/><span class="line">11</span><br/></pre></td><td class="code"><pre><span class="line">1.x=&quot;左上角嵌入（默认为0）&quot;</span><br/><span class="line">2.y=&quot;左上角嵌入（默认为0）&quot;</span><br/><span class="line">3.width=&quot;SVG片段的宽度（默认为100％）&quot;</span><br/><span class="line">4.height=&quot;SVG片段的高度（默认为100％）&quot;</span><br/><span class="line">5.viewBox=&quot;点&quot;seen&quot;这个SVG绘图区域。由空格或逗号分隔的4个值。 (min x, min y, width, height)&quot;</span><br/><span class="line">6.preserveAspectRatio=&quot;&apos;none&apos;或任何&apos;xVALYVAL&apos;的9种组合,VAL是&quot;min&quot;，&quot;mid&quot;或&quot;max&quot;。（默认情况下none）&quot;</span><br/><span class="line">7.zoomAndPan=&quot;&apos;magnify&apos; or &apos;disable&apos;.Magnify选项允许用户平移和缩放您的文件（默认Magnify ）&quot;</span><br/><span class="line">8.xml=&quot;最外层&lt;svg&gt;元素都需要安装SVG和它的命名空间：</span><br/><span class="line">      xmlns=&quot;http://www.w3.org/2000/svg&quot; </span><br/><span class="line">      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; </span><br/><span class="line">      xml:space=&quot;preserve&quot;&quot;</span><br/></pre></td></tr></table></figure>
+</svg></li>
+</ol>
+<p>4.<use>:使用URI引用一个<g>,<svg>或其他具有一个唯一的ID属性和重复的图形元素。复制的是原始的元素，因此文件中的原始存在只是一个参考。原始影响到所有副本的任何改变。</svg></g></use></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.x=&quot;克隆元素的左上角的x轴&quot;</span><br><span class="line">2.y=&quot;克隆元素的左上角的y轴&quot;</span><br><span class="line">3.width=&quot;克隆元素的宽度&quot;</span><br><span class="line">4.height=&quot;克隆元素的高度&quot;</span><br><span class="line">5.xlink:href=&quot;URI引用克隆元素&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><ol>
+<li>fixed<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">生成绝对定位的元素，相对于浏览器窗口进行定位，</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/maofuling.github.io/2018/11/22/timeBeautiful/">
+    <time datetime="2018-11-22T08:24:33.000Z" class="entry-date">
+        2018-11-22
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/时间管理-软件-日记-总结/">时间管理 软件 日记 总结</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/maofuling.github.io/2018/11/21/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/21/hello-world/" data-id="cjoslxtvi00007stdvwz206u9" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/maofuling.github.io/2018/11/21/hello-world/">
+    <time datetime="2018-11-21T07:53:41.886Z" class="entry-date">
+        2018-11-21
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+  
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s">
+        <input type="submit" id="searchsubmit" value="搜索">
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/maofuling.github.io/2018/11/22/timeBeautiful/">timebeautiful</a>
+          </li>
+        
+          <li>
+            <a href="/maofuling.github.io/2018/11/21/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-content">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/时间管理-软件-日记-总结/">时间管理 软件 日记 总结</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-content tagcloud">
+      <a href="/maofuling.github.io/tags/时间管理-软件-日记-总结/" style="font-size: 10px;">时间管理 软件 日记 总结</a>
+    </div>
+  </aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2018 John Doe
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/maofuling.github.io/fancybox/jquery.fancybox.css">
+  <script src="/maofuling.github.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/maofuling.github.io/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
