@@ -61,6 +61,73 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-css雪碧图" class="post-css雪碧图 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/maofuling.github.io/2018/11/24/css雪碧图/">css雪碧图</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/24/css雪碧图/" data-id="cjowersh70003v0tdybai5cf8" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="css雪碧图"><a href="#css雪碧图" class="headerlink" title="css雪碧图"></a>css雪碧图</h1><ol>
+<li><code>定义</code>:将一个页面涉及到的所有零星图片都包含到一张大图中,使用时通过结合定位来获取准确图片位置。是网页图片应用的一种处理手段，可以优化网络</li>
+<li><code>优势</code>:<ul>
+<li>减少http请求次数</li>
+<li>减少图片大小，提升网页加载速度 </li>
+<li>减轻服务压力，缩短悬停加载图片所需时间延迟(多张图片加载速度小于拼合成的图片的加载速度，)<code>敲黑板</code>:页面加载时，不是加载单独图片，而是加载所有组合图片</li>
+<li>减少命名难的问题</li>
+</ul>
+</li>
+<li><code>劣势</code>:<ul>
+<li>背景太小，可能出现多余背景或留白；</li>
+<li>宽屏下，高分辨率的屏幕自适应页面，图片加载不够宽，容易断裂，</li>
+<li>不是直接替换照片，利用ps测量每一个的位置，过程复杂，</li>
+<li>维护不方便，如果是不经常替换的情况还可以，若是经常更换，图标预留位置不够的情况下就必须整体都替换，重写css样式，</li>
+</ul>
+</li>
+<li><p><code>应用场景</code>:</p>
+<pre><code>- 对于img标签设置的内容性图片，是不能合并到雪碧图的，如果合并这些图片会影响页面可读性，语义化降低且可调整的范围小
+- 对于横向和纵向都平铺的图片，也不能合并到雪碧图中。如果是横向平铺，只能将所有横向平铺的图合并成一张大图，只能竖直排列，不能水平排列；如果是纵向平铺，只能将所有纵向平铺的图合并成一张大图，只能水平排列，不能竖直排列
+</code></pre><p>   推荐:       <a href="https://www.cnblogs.com/xiaohuochai/p/4793421.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaohuochai/p/4793421.html</a><br>   <a href="https://www.jianshu.com/p/7482dde882af" target="_blank" rel="noopener">https://www.jianshu.com/p/7482dde882af</a><br>   制作工具详解:<a href="http://www.cnblogs.com/wang4517/p/4476758.html" target="_blank" rel="noopener">http://www.cnblogs.com/wang4517/p/4476758.html</a></p>
+</li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/maofuling.github.io/2018/11/24/css雪碧图/">
+    <time datetime="2018-11-24T03:20:30.000Z" class="entry-date">
+        2018-11-24
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/">sprite 精灵图  雪碧图 网页优化</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-blog" class="post-blog post type-post status-publish format-standard hentry">
     <!---->
 
@@ -76,15 +143,14 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/blog/" data-id="cjosnj6vy000094tdddhgewuu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/blog/" data-id="cjowersgc0000v0tdvxn8sxpr" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <h2 id="使用github与blog搭建博客"><a href="#使用github与blog搭建博客" class="headerlink" title="使用github与blog搭建博客"></a>使用github与blog搭建博客</h2><h2 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a><code>踩坑</code></h2><p>   <img src="./img/err.png" alt="ALT text"></p>
-<h2 id="脱坑"><a href="#脱坑" class="headerlink" title="脱坑"></a><code>脱坑</code></h2><pre><code>![alt text](./img/1.png)
-</code></pre><h2 id="敲黑板：要保证type-与deploy-的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径"><a href="#敲黑板：要保证type-与deploy-的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径" class="headerlink" title="敲黑板：要保证type:与deploy:的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径"></a><code>敲黑板：要保证type:与deploy:的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径</code></h2><h2 id="庆祝我博客终于可以在gitbub上使用了，yes"><a href="#庆祝我博客终于可以在gitbub上使用了，yes" class="headerlink" title="庆祝我博客终于可以在gitbub上使用了，yes"></a><code>庆祝我博客终于可以在gitbub上使用了，yes</code></h2>
+        <h2 id="使用github与blog搭建博客"><a href="#使用github与blog搭建博客" class="headerlink" title="使用github与blog搭建博客"></a>使用github与blog搭建博客</h2><h2 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a><code>踩坑</code></h2><p>   { % img err.png  this is an example image % }</p>
+<h2 id="脱坑"><a href="#脱坑" class="headerlink" title="脱坑"></a><code>脱坑</code></h2><h2 id="敲黑板：要保证type-与deploy-的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径"><a href="#敲黑板：要保证type-与deploy-的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径" class="headerlink" title="敲黑板：要保证type:与deploy:的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径"></a><code>敲黑板：要保证type:与deploy:的右边在一条垂直线上，同时注意repo后的和url后的是不一样的，还有root后的路径</code></h2><h2 id="庆祝我博客终于可以在gitbub上使用了，yes"><a href="#庆祝我博客终于可以在gitbub上使用了，yes" class="headerlink" title="庆祝我博客终于可以在gitbub上使用了，yes"></a><code>庆祝我博客终于可以在gitbub上使用了，yes</code></h2>
       
     </div><!-- .entry-content -->
 
@@ -116,14 +182,14 @@
         
   
     <h1 class="entry-title">
-      <a class="article-title" href="/maofuling.github.io/2018/11/22/svg/">timebeautiful</a>
+      <a class="article-title" href="/maofuling.github.io/2018/11/22/svg/">SVG</a>
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/svg/" data-id="cjosnj6wp000194td8598hlvs" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/svg/" data-id="cjowersgr0001v0tdmccqq2p0" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -132,21 +198,94 @@
         <h1 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h1><h2 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h2><ol>
 <li><p>标签</p>
 <ol>
-<li><defs>:引用的元素容器</defs></li>
-<li><p><path>:定义路径</path></p>
+<li><code>defs</code>:引用的元素容器</li>
+<li><p><code>path</code>:定义路径</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">属性:</span><br><span class="line">  1. d=&quot;定义路径指令&quot;</span><br><span class="line">       pathLength=&quot;如果存在，路径将进行缩放，以便计算各点相当于此值的路径长度&quot;</span><br><span class="line">  2. transform=&quot;转换列表&quot;</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li><svg>:创建svg文档片段<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br/><span class="line">2</span><br/><span class="line">3</span><br/><span class="line">4</span><br/><span class="line">5</span><br/><span class="line">6</span><br/><span class="line">7</span><br/><span class="line">8</span><br/><span class="line">9</span><br/><span class="line">10</span><br/><span class="line">11</span><br/></pre></td><td class="code"><pre><span class="line">1.x=&quot;左上角嵌入（默认为0）&quot;</span><br/><span class="line">2.y=&quot;左上角嵌入（默认为0）&quot;</span><br/><span class="line">3.width=&quot;SVG片段的宽度（默认为100％）&quot;</span><br/><span class="line">4.height=&quot;SVG片段的高度（默认为100％）&quot;</span><br/><span class="line">5.viewBox=&quot;点&quot;seen&quot;这个SVG绘图区域。由空格或逗号分隔的4个值。 (min x, min y, width, height)&quot;</span><br/><span class="line">6.preserveAspectRatio=&quot;&apos;none&apos;或任何&apos;xVALYVAL&apos;的9种组合,VAL是&quot;min&quot;，&quot;mid&quot;或&quot;max&quot;。（默认情况下none）&quot;</span><br/><span class="line">7.zoomAndPan=&quot;&apos;magnify&apos; or &apos;disable&apos;.Magnify选项允许用户平移和缩放您的文件（默认Magnify ）&quot;</span><br/><span class="line">8.xml=&quot;最外层&lt;svg&gt;元素都需要安装SVG和它的命名空间：</span><br/><span class="line">      xmlns=&quot;http://www.w3.org/2000/svg&quot; </span><br/><span class="line">      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; </span><br/><span class="line">      xml:space=&quot;preserve&quot;&quot;</span><br/></pre></td></tr></table></figure>
-</svg></li>
-</ol>
-<p>4.<use>:使用URI引用一个<g>,<svg>或其他具有一个唯一的ID属性和重复的图形元素。复制的是原始的元素，因此文件中的原始存在只是一个参考。原始影响到所有副本的任何改变。</svg></g></use></p>
+</li>
+<li><p><code>svg</code>:创建svg文档片段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.x=&quot;左上角嵌入（默认为0）&quot;</span><br><span class="line">2.y=&quot;左上角嵌入（默认为0）&quot;</span><br><span class="line">3.width=&quot;SVG片段的宽度（默认为100％）&quot;</span><br><span class="line">4.height=&quot;SVG片段的高度（默认为100％）&quot;</span><br><span class="line">5.viewBox=&quot;点&quot;seen&quot;这个SVG绘图区域。由空格或逗号分隔的4个值。 (min x, min y, width, height)&quot;</span><br><span class="line">6.preserveAspectRatio=&quot;&apos;none&apos;或任何&apos;xVALYVAL&apos;的9种组合,VAL是&quot;min&quot;，&quot;mid&quot;或&quot;max&quot;。（默认情况下none）&quot;</span><br><span class="line">7.zoomAndPan=&quot;&apos;magnify&apos; or &apos;disable&apos;.Magnify选项允许用户平移和缩放您的文件（默认Magnify ）&quot;</span><br><span class="line">8.xml=&quot;最外层&lt;svg&gt;元素都需要安装SVG和它的命名空间：</span><br><span class="line">      xmlns=&quot;http://www.w3.org/2000/svg&quot; </span><br><span class="line">      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; </span><br><span class="line">      xml:space=&quot;preserve&quot;&quot;</span><br></pre></td></tr></table></figure>
+<p>4.<code>use</code>:使用URI引用一个g,svg或其他具有一个唯一的ID属性和重复的图形元素。复制的是原始的元素，因此文件中的原始存在只是一个参考。原始影响到所有副本的任何改变。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.x=&quot;克隆元素的左上角的x轴&quot;</span><br><span class="line">2.y=&quot;克隆元素的左上角的y轴&quot;</span><br><span class="line">3.width=&quot;克隆元素的宽度&quot;</span><br><span class="line">4.height=&quot;克隆元素的高度&quot;</span><br><span class="line">5.xlink:href=&quot;URI引用克隆元素&quot;</span><br></pre></td></tr></table></figure>
+<p>5.<code>symbol</code>定义一个图像模板，其本身不会输出任何图像，只有在使用<use></use>实例化后才会显示，可以在svg文档里反复使用</p>
+<h2 id="恩怨纠缠-defs-symbol-use"><a href="#恩怨纠缠-defs-symbol-use" class="headerlink" title="恩怨纠缠-defs symbol use"></a>恩怨纠缠-defs symbol use</h2><p><code>1. defs</code></p>
+<blockquote>
+<p>预定义元素使其能够在svg图像里重复使用,defs元素定义的图形不能直接显示在svg上，需要借助use才可以</p>
+<p>什么元素可以定义为defs</p>
+<ol>
+<li>g</li>
+<li>symbol</li>
+<li>任何图形元素<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg xmlns=<span class="string">"http://www.w3.org/2000/svg"</span>&gt;</span><br><span class="line">       &lt;defs&gt;</span><br><span class="line">           &lt;g id=<span class="string">"pi"</span>&gt;</span><br><span class="line">              &lt;circle cx=<span class="string">"50"</span> cy=<span class="string">"50"</span> r=<span class="string">"50"</span>/&gt;</span><br><span class="line">           &lt;<span class="regexp">/g&gt;</span></span><br><span class="line"><span class="regexp">       &lt;/</span>defs&gt;</span><br><span class="line">       &lt;use xlink:href=<span class="string">"#pi"</span> x=<span class="string">"200"</span> y=<span class="string">"50"</span>&gt;&lt;/use&gt;</span><br><span class="line">&lt;<span class="regexp">/svg&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<p><code>2. symbol</code></p>
+<ol>
+<li>定义可以重复使用的符号，同defs，需使用use才可以显示</li>
+<li>什么元素可以定义在里面<ol>
+<li>动画元素</li>
+<li>描述性元素</li>
+<li>形状元素</li>
+<li>结构化元素</li>
+<li>渐变元素</li>
+</ol>
+</li>
+<li><p>专有属性</p>
+<ol>
+<li>preserveAspectRatio</li>
+<li>viewBox <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg xmlns=<span class="string">"http://www.w3.org/2000/svg"</span>&gt;</span><br><span class="line">        &lt;symbol&gt;</span><br><span class="line">            &lt;g id=<span class="string">"pi"</span>&gt;</span><br><span class="line">               &lt;circle cx=<span class="string">"50"</span> cy=<span class="string">"50"</span> r=<span class="string">"50"</span> style=<span class="string">"fill:lightpink"</span>/&gt;</span><br><span class="line">            &lt;<span class="regexp">/g&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>symbol&gt;</span><br><span class="line">        &lt;use xlink:href=<span class="string">"#pi"</span> x=<span class="string">"200"</span> y=<span class="string">"50"</span>&gt;&lt;/use&gt;</span><br><span class="line">&lt;<span class="regexp">/svg&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
+<li><p>use</p>
+<ol>
+<li>可以在svg图像里多次重复使用一个预定义的svg图形，g元素包含于defs元素里 <code>实例见上两例</code>，引用g需要给g一个id值，然后再use里使用id值</li>
+<li>浏览器在use上应用同源策略，同时在xlink:href的路径不为跨域。</li>
+<li>跨svg调用，即可以调用其他svg文件的元素，只要是在一个文档中<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//     结合上面的例子，这个例子是跨svg的</span></span><br><span class="line">         &lt;svg width=<span class="string">"300"</span> height=<span class="string">"120"</span>&gt;&lt;use xlink:href="#pi" x="50" y="50"&gt;&lt;/svg&gt;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><ol>
-<li>fixed<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">生成绝对定位的元素，相对于浏览器窗口进行定位，</span><br></pre></td></tr></table></figure></li>
+</li>
+<li><p>什么元素可以定义在里面</p>
+<ol>
+<li>任意的动画元素</li>
+<li>任意的描述性元素<h2 id="一山二虎-优点缺点"><a href="#一山二虎-优点缺点" class="headerlink" title="一山二虎-优点缺点"></a>一山二虎-优点缺点</h2><code>优点:</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>支持多色图标,不再受单色限制</li>
+<li>可通过font-size,color控制样式</li>
+<li>可利用css实现动画</li>
+<li>没有失真问题</li>
+<li>减少http请求<br><code>缺点:</code></li>
+<li>兼容性差,不支持ie9以下浏览器</li>
+<li>浏览器渲染svg性能一般<h2 id="Svg-Sprite使用-Symbol制作icoon"><a href="#Svg-Sprite使用-Symbol制作icoon" class="headerlink" title="Svg Sprite使用 Symbol制作icoon"></a>Svg Sprite使用 Symbol制作icoon</h2><code>原文作者为:张鑫旭,自己在前辈文章上做少数改变</code></li>
+</ul>
+<ol>
+<li>知识预备<ul>
+<li>css雪碧图</li>
+<li>字体图标</li>
+</ul>
+</li>
+</ol>
+<p><code>张鑫旭大佬总结:symbol+use=&gt;SVG Sprite</code></p>
+<ol start="2">
+<li><p>制作svg Sprite</p>
+<ol>
+<li>icon获取(icomoon.io,阿里的iconfont.cn,bootsrap的font-awesome):从以上官网里直接下载，找到你想要的图标点击然后出现下载图标，然后出现SVG,你接着点击SVG，就可以下载了</li>
+<li>合并SVG，使用gulp<ol>
+<li>npm install  grunt-svgstore  –save-dev</li>
+<li>按着这个文件夹顺序（node_modules-&gt;grunt-svgstore)找到Gruntfile.js,打开它在里面加上”grunt.loadNpmTasks(‘grunt-svgstore’);”.svg图标颜色使用fill填充,cleanup为true</li>
+<li>在svgstore:{}里配置好,并切换到grunt-svgstore目录,在命令行里输入grunt,到此基本结束<br>推荐文章:<a href="http://www.zhangxinxu.com/wordpress/?p=4264" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/?p=4264</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>如何使用svg代码<br>推荐文章:<a href="http://www.zhangxinxu.com/wordpress/?p=4264" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/?p=4264</a></p>
+</li>
 </ol>
 
       
@@ -161,7 +300,7 @@
     
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/时间管理-软件-日记-总结/">时间管理 软件 日记 总结</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/svg-defs-icon-svg制作icon/">svg ,defs , icon, svg制作icon</a></li></ul>
 
     </footer>
 </article>
@@ -195,11 +334,15 @@
       <ul>
         
           <li>
+            <a href="/maofuling.github.io/2018/11/24/css雪碧图/">css雪碧图</a>
+          </li>
+        
+          <li>
             <a href="/maofuling.github.io/2018/11/22/blog/">github博客搭建</a>
           </li>
         
           <li>
-            <a href="/maofuling.github.io/2018/11/22/svg/">timebeautiful</a>
+            <a href="/maofuling.github.io/2018/11/22/svg/">SVG</a>
           </li>
         
       </ul>
@@ -211,7 +354,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tags</h3>
     <div class="widget-content">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/hexo-blog-博客/">hexo  blog   博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/时间管理-软件-日记-总结/">时间管理 软件 日记 总结</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/hexo-blog-博客/">hexo  blog   博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/">sprite 精灵图  雪碧图 网页优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/svg-defs-icon-svg制作icon/">svg ,defs , icon, svg制作icon</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -220,7 +363,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget-content tagcloud">
-      <a href="/maofuling.github.io/tags/hexo-blog-博客/" style="font-size: 10px;">hexo  blog   博客</a> <a href="/maofuling.github.io/tags/时间管理-软件-日记-总结/" style="font-size: 10px;">时间管理 软件 日记 总结</a>
+      <a href="/maofuling.github.io/tags/hexo-blog-博客/" style="font-size: 10px;">hexo  blog   博客</a> <a href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/" style="font-size: 10px;">sprite 精灵图  雪碧图 网页优化</a> <a href="/maofuling.github.io/tags/svg-defs-icon-svg制作icon/" style="font-size: 10px;">svg ,defs , icon, svg制作icon</a>
     </div>
   </aside>
 
