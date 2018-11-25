@@ -76,7 +76,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/24/css雪碧图/" data-id="cjowersh70003v0tdybai5cf8" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/24/css雪碧图/" data-id="cjowfd00h000198tdsvak3sbj" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -143,7 +143,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/blog/" data-id="cjowersgc0000v0tdvxn8sxpr" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/blog/" data-id="cjowfczzm000098tdfo86x958" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -189,7 +189,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/svg/" data-id="cjowersgr0001v0tdmccqq2p0" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://maofuling.github.io/maofuling.github.io/2018/11/22/svg/" data-id="cjowfd00x000398tdef5pmq5x" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -207,17 +207,12 @@
 <p>4.<code>use</code>:使用URI引用一个g,svg或其他具有一个唯一的ID属性和重复的图形元素。复制的是原始的元素，因此文件中的原始存在只是一个参考。原始影响到所有副本的任何改变。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.x=&quot;克隆元素的左上角的x轴&quot;</span><br><span class="line">2.y=&quot;克隆元素的左上角的y轴&quot;</span><br><span class="line">3.width=&quot;克隆元素的宽度&quot;</span><br><span class="line">4.height=&quot;克隆元素的高度&quot;</span><br><span class="line">5.xlink:href=&quot;URI引用克隆元素&quot;</span><br></pre></td></tr></table></figure>
 <p>5.<code>symbol</code>定义一个图像模板，其本身不会输出任何图像，只有在使用<use></use>实例化后才会显示，可以在svg文档里反复使用</p>
-<h2 id="恩怨纠缠-defs-symbol-use"><a href="#恩怨纠缠-defs-symbol-use" class="headerlink" title="恩怨纠缠-defs symbol use"></a>恩怨纠缠-defs symbol use</h2><p><code>1. defs</code></p>
-<blockquote>
-<p>预定义元素使其能够在svg图像里重复使用,defs元素定义的图形不能直接显示在svg上，需要借助use才可以</p>
+<h2 id="恩怨纠缠-defs-symbol-use"><a href="#恩怨纠缠-defs-symbol-use" class="headerlink" title="恩怨纠缠-defs symbol use"></a>恩怨纠缠-defs symbol use</h2><p><code>1. defs</code><br>预定义元素使其能够在svg图像里重复使用,defs元素定义的图形不能直接显示在svg上，需要借助use才可以</p>
 <p>什么元素可以定义为defs</p>
-<ol>
-<li>g</li>
-<li>symbol</li>
-<li>任何图形元素<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg xmlns=<span class="string">"http://www.w3.org/2000/svg"</span>&gt;</span><br><span class="line">       &lt;defs&gt;</span><br><span class="line">           &lt;g id=<span class="string">"pi"</span>&gt;</span><br><span class="line">              &lt;circle cx=<span class="string">"50"</span> cy=<span class="string">"50"</span> r=<span class="string">"50"</span>/&gt;</span><br><span class="line">           &lt;<span class="regexp">/g&gt;</span></span><br><span class="line"><span class="regexp">       &lt;/</span>defs&gt;</span><br><span class="line">       &lt;use xlink:href=<span class="string">"#pi"</span> x=<span class="string">"200"</span> y=<span class="string">"50"</span>&gt;&lt;/use&gt;</span><br><span class="line">&lt;<span class="regexp">/svg&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-</blockquote>
+<pre><code>1. g   
+2. symbol
+3. 任何图形元素
+</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg xmlns=<span class="string">"http://www.w3.org/2000/svg"</span>&gt;</span><br><span class="line">       &lt;defs&gt;</span><br><span class="line">           &lt;g id=<span class="string">"pi"</span>&gt;</span><br><span class="line">              &lt;circle cx=<span class="string">"50"</span> cy=<span class="string">"50"</span> r=<span class="string">"50"</span>/&gt;</span><br><span class="line">           &lt;<span class="regexp">/g&gt;</span></span><br><span class="line"><span class="regexp">       &lt;/</span>defs&gt;</span><br><span class="line">       &lt;use xlink:href=<span class="string">"#pi"</span> x=<span class="string">"200"</span> y=<span class="string">"50"</span>&gt;&lt;/use&gt;</span><br><span class="line">&lt;<span class="regexp">/svg&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><code>2. symbol</code></p>
@@ -242,19 +237,19 @@
 <ol>
 <li>可以在svg图像里多次重复使用一个预定义的svg图形，g元素包含于defs元素里 <code>实例见上两例</code>，引用g需要给g一个id值，然后再use里使用id值</li>
 <li>浏览器在use上应用同源策略，同时在xlink:href的路径不为跨域。</li>
-<li>跨svg调用，即可以调用其他svg文件的元素，只要是在一个文档中<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//     结合上面的例子，这个例子是跨svg的</span></span><br><span class="line">         &lt;svg width=<span class="string">"300"</span> height=<span class="string">"120"</span>&gt;&lt;use xlink:href="#pi" x="50" y="50"&gt;&lt;/svg&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-</li>
-<li><p>什么元素可以定义在里面</p>
-<ol>
+<li>跨svg调用，即可以调用其他svg文件的元素，只要是在一个文档中</li>
+<li>什么元素可以定义在里面<ol>
 <li>任意的动画元素</li>
-<li>任意的描述性元素<h2 id="一山二虎-优点缺点"><a href="#一山二虎-优点缺点" class="headerlink" title="一山二虎-优点缺点"></a>一山二虎-优点缺点</h2><code>优点:</code></li>
+<li>任意的描述性元素<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 结合上面的例子，这个例子是跨svg的</span></span><br><span class="line">   &lt;svg width=<span class="string">"300"</span> height=<span class="string">"120"</span>&gt;&lt;use xlink:href="#pi" x="50" y="50"&gt;&lt;/svg&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
 </ol>
 </li>
 </ol>
 </li>
 </ol>
+<h2 id="一山二虎-优点缺点"><a href="#一山二虎-优点缺点" class="headerlink" title="一山二虎-优点缺点"></a>一山二虎-优点缺点</h2><p><code>优点:</code></p>
 <ul>
 <li>支持多色图标,不再受单色限制</li>
 <li>可通过font-size,color控制样式</li>
@@ -276,10 +271,16 @@
 <li><p>制作svg Sprite</p>
 <ol>
 <li>icon获取(icomoon.io,阿里的iconfont.cn,bootsrap的font-awesome):从以上官网里直接下载，找到你想要的图标点击然后出现下载图标，然后出现SVG,你接着点击SVG，就可以下载了</li>
-<li>合并SVG，使用gulp<ol>
+<li><p>合并SVG，使用gulp</p>
+<ol>
 <li>npm install  grunt-svgstore  –save-dev</li>
-<li>按着这个文件夹顺序（node_modules-&gt;grunt-svgstore)找到Gruntfile.js,打开它在里面加上”grunt.loadNpmTasks(‘grunt-svgstore’);”.svg图标颜色使用fill填充,cleanup为true</li>
+<li>按着这个文件夹顺序（node_modules-&gt;grunt-svgstore)找到Gruntfile.js,打开它在里面加上”grunt.loadNpmTasks(‘grunt-svgstore’);”.svg图标颜色使用fill填充,cleanup为true<ol start="3">
 <li>在svgstore:{}里配置好,并切换到grunt-svgstore目录,在命令行里输入grunt,到此基本结束<br>推荐文章:<a href="http://www.zhangxinxu.com/wordpress/?p=4264" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/?p=4264</a></li>
+</ol>
+</li>
+</ol>
+<ol start="3">
+<li>在线制作svg Sprite<br>推荐文章:【SVG Sprite_SVG, css sprite, icon 教程_w3cplus】<a href="https://www.w3cplus.com/svg/create-svg-sprite-sheet.html" target="_blank" rel="noopener">https://www.w3cplus.com/svg/create-svg-sprite-sheet.html</a></li>
 </ol>
 </li>
 </ol>
@@ -300,7 +301,7 @@
     
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/svg-defs-icon-svg制作icon/">svg ,defs , icon, svg制作icon</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/svg-defs-icon-svg-制作icon/">svg  defs  icon  svg 制作icon</a></li></ul>
 
     </footer>
 </article>
@@ -354,7 +355,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tags</h3>
     <div class="widget-content">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/hexo-blog-博客/">hexo  blog   博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/">sprite 精灵图  雪碧图 网页优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/svg-defs-icon-svg制作icon/">svg ,defs , icon, svg制作icon</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/hexo-blog-博客/">hexo  blog   博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/">sprite 精灵图  雪碧图 网页优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/maofuling.github.io/tags/svg-defs-icon-svg-制作icon/">svg  defs  icon  svg 制作icon</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -363,7 +364,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget-content tagcloud">
-      <a href="/maofuling.github.io/tags/hexo-blog-博客/" style="font-size: 10px;">hexo  blog   博客</a> <a href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/" style="font-size: 10px;">sprite 精灵图  雪碧图 网页优化</a> <a href="/maofuling.github.io/tags/svg-defs-icon-svg制作icon/" style="font-size: 10px;">svg ,defs , icon, svg制作icon</a>
+      <a href="/maofuling.github.io/tags/hexo-blog-博客/" style="font-size: 10px;">hexo  blog   博客</a> <a href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/" style="font-size: 10px;">sprite 精灵图  雪碧图 网页优化</a> <a href="/maofuling.github.io/tags/svg-defs-icon-svg-制作icon/" style="font-size: 10px;">svg  defs  icon  svg 制作icon</a>
     </div>
   </aside>
 
