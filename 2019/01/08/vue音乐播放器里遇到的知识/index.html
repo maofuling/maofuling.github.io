@@ -3,20 +3,16 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>css雪碧图 | cocoon</title>
+  <title>vue音乐播放器里遇到的知识 | cocoon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="css雪碧图 定义:将一个页面涉及到的所有零星图片都包含到一张大图中,使用时通过结合定位来获取准确图片位置。是网页图片应用的一种处理手段，可以优化网络 优势: 减少http请求次数 减少图片大小，提升网页加载速度  减轻服务压力，缩短悬停加载图片所需时间延迟(多张图片加载速度小于拼合成的图片的加载速度，)敲黑板:页面加载时，不是加载单独图片，而是加载所有组合图片 减少命名难的问题   劣势: 背景">
-<meta name="keywords" content="sprite 精灵图  雪碧图 网页优化">
-<meta property="og:type" content="article">
-<meta property="og:title" content="css雪碧图">
-<meta property="og:url" content="https://maofuling.github.io/maofuling.github.io/2018/11/24/css雪碧图/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="vue音乐播放器里遇到的知识">
+<meta property="og:url" content="https://maofuling.github.io/maofuling.github.io/2019/01/08/vue音乐播放器里遇到的知识/index.html">
 <meta property="og:site_name" content="cocoon">
-<meta property="og:description" content="css雪碧图 定义:将一个页面涉及到的所有零星图片都包含到一张大图中,使用时通过结合定位来获取准确图片位置。是网页图片应用的一种处理手段，可以优化网络 优势: 减少http请求次数 减少图片大小，提升网页加载速度  减轻服务压力，缩短悬停加载图片所需时间延迟(多张图片加载速度小于拼合成的图片的加载速度，)敲黑板:页面加载时，不是加载单独图片，而是加载所有组合图片 减少命名难的问题   劣势: 背景">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-24T08:43:10.531Z">
+<meta property="og:updated_time" content="2019-01-08T04:15:10.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css雪碧图">
-<meta name="twitter:description" content="css雪碧图 定义:将一个页面涉及到的所有零星图片都包含到一张大图中,使用时通过结合定位来获取准确图片位置。是网页图片应用的一种处理手段，可以优化网络 优势: 减少http请求次数 减少图片大小，提升网页加载速度  减轻服务压力，缩短悬停加载图片所需时间延迟(多张图片加载速度小于拼合成的图片的加载速度，)敲黑板:页面加载时，不是加载单独图片，而是加载所有组合图片 减少命名难的问题   劣势: 背景">
+<meta name="twitter:title" content="vue音乐播放器里遇到的知识">
   
     <link rel="alternate" href="/atom.xml" title="cocoon" type="application/atom+xml">
   
@@ -65,10 +61,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-css雪碧图" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-vue音乐播放器里遇到的知识" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/maofuling.github.io/2018/11/24/css雪碧图/" class="article-date">
-  <time datetime="2018-11-24T03:20:30.000Z" itemprop="datePublished">2018-11-24</time>
+    <a href="/maofuling.github.io/2019/01/08/vue音乐播放器里遇到的知识/" class="article-date">
+  <time datetime="2019-01-08T04:15:10.000Z" itemprop="datePublished">2019-01-08</time>
 </a>
     
   </div>
@@ -79,7 +75,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      css雪碧图
+      vue音乐播放器里遇到的知识
     </h1>
   
 
@@ -87,56 +83,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="css雪碧图"><a href="#css雪碧图" class="headerlink" title="css雪碧图"></a>css雪碧图</h1><ol>
-<li><code>定义</code>:将一个页面涉及到的所有零星图片都包含到一张大图中,使用时通过结合定位来获取准确图片位置。是网页图片应用的一种处理手段，可以优化网络</li>
-<li><code>优势</code>:<ul>
-<li>减少http请求次数</li>
-<li>减少图片大小，提升网页加载速度 </li>
-<li>减轻服务压力，缩短悬停加载图片所需时间延迟(多张图片加载速度小于拼合成的图片的加载速度，)<code>敲黑板</code>:页面加载时，不是加载单独图片，而是加载所有组合图片</li>
-<li>减少命名难的问题</li>
-</ul>
-</li>
-<li><code>劣势</code>:<ul>
-<li>背景太小，可能出现多余背景或留白；</li>
-<li>宽屏下，高分辨率的屏幕自适应页面，图片加载不够宽，容易断裂，</li>
-<li>不是直接替换照片，利用ps测量每一个的位置，过程复杂，</li>
-<li>维护不方便，如果是不经常替换的情况还可以，若是经常更换，图标预留位置不够的情况下就必须整体都替换，重写css样式，</li>
-</ul>
-</li>
-<li><p><code>应用场景</code>:</p>
-<pre><code>- 对于img标签设置的内容性图片，是不能合并到雪碧图的，如果合并这些图片会影响页面可读性，语义化降低且可调整的范围小
-- 对于横向和纵向都平铺的图片，也不能合并到雪碧图中。如果是横向平铺，只能将所有横向平铺的图合并成一张大图，只能竖直排列，不能水平排列；如果是纵向平铺，只能将所有纵向平铺的图合并成一张大图，只能水平排列，不能竖直排列
-</code></pre><p>   推荐:       <a href="https://www.cnblogs.com/xiaohuochai/p/4793421.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaohuochai/p/4793421.html</a><br>   <a href="https://www.jianshu.com/p/7482dde882af" target="_blank" rel="noopener">https://www.jianshu.com/p/7482dde882af</a><br>   制作工具详解:<a href="http://www.cnblogs.com/wang4517/p/4476758.html" target="_blank" rel="noopener">http://www.cnblogs.com/wang4517/p/4476758.html</a></p>
-</li>
-</ol>
-
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://maofuling.github.io/maofuling.github.io/2018/11/24/css雪碧图/" data-id="cjr8t9avr0003kctdx7xyrw0p" class="article-share-link">Share</a>
+      <a data-url="https://maofuling.github.io/maofuling.github.io/2019/01/08/vue音乐播放器里遇到的知识/" data-id="cjr8t9awo0008kctdsc5i4xnf" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maofuling.github.io/tags/sprite-精灵图-雪碧图-网页优化/">sprite 精灵图  雪碧图 网页优化</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/maofuling.github.io/2019/01/03/webpack笔记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          webpack笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/maofuling.github.io/2018/11/22/blog/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/maofuling.github.io/2019/01/05/call，bind，apply/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">github博客搭建</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>

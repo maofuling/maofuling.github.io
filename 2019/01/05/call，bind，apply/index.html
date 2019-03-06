@@ -3,15 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Tag: svg  defs  icon  svg 制作icon | cocoon</title>
+  <title>cocoon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="call() 1234567891011121314var Pet = &amp;#123;       words : &apos;...&apos;,       speak : function (say) &amp;#123;           console.log(say + &apos;&apos;+ this.words)       &amp;#125;   &amp;#125;   Pet.speak(&apos;Speak&apos;); // 结果：Speak.">
+<meta property="og:type" content="article">
 <meta property="og:title" content="cocoon">
-<meta property="og:url" content="https://maofuling.github.io/maofuling.github.io/tags/svg-defs-icon-svg-制作icon/index.html">
+<meta property="og:url" content="https://maofuling.github.io/maofuling.github.io/2019/01/05/call，bind，apply/index.html">
 <meta property="og:site_name" content="cocoon">
+<meta property="og:description" content="call() 1234567891011121314var Pet = &amp;#123;       words : &apos;...&apos;,       speak : function (say) &amp;#123;           console.log(say + &apos;&apos;+ this.words)       &amp;#125;   &amp;#125;   Pet.speak(&apos;Speak&apos;); // 结果：Speak.">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-07T03:10:36.458Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cocoon">
+<meta name="twitter:description" content="call() 1234567891011121314var Pet = &amp;#123;       words : &apos;...&apos;,       speak : function (say) &amp;#123;           console.log(say + &apos;&apos;+ this.words)       &amp;#125;   &amp;#125;   Pet.speak(&apos;Speak&apos;); // 结果：Speak.">
   
     <link rel="alternate" href="/atom.xml" title="cocoon" type="application/atom+xml">
   
@@ -60,39 +64,51 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/maofuling.github.io/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/maofuling.github.io/2018/11/22/svg/" class="archive-article-date">
-  <time datetime="2018-11-22T08:24:33.000Z" itemprop="datePublished">Nov 22</time>
+        <section id="main"><article id="post-call，bind，apply" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/maofuling.github.io/2019/01/05/call，bind，apply/" class="article-date">
+  <time datetime="2019-01-05T04:26:37.635Z" itemprop="datePublished">2019-01-05</time>
 </a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/maofuling.github.io/2018/11/22/svg/">SVG</a>
-    </h1>
-  
-
-    </header>
+    
   </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="call"><a href="#call" class="headerlink" title="call()"></a>call()</h1> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Pet = &#123;</span><br><span class="line">       words : <span class="string">'...'</span>,</span><br><span class="line">       speak : <span class="function"><span class="keyword">function</span> (<span class="params">say</span>) </span>&#123;</span><br><span class="line">           <span class="built_in">console</span>.log(say + <span class="string">''</span>+ <span class="keyword">this</span>.words)</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   Pet.speak(<span class="string">'Speak'</span>); <span class="comment">// 结果：Speak...</span></span><br><span class="line"></span><br><span class="line">   <span class="keyword">var</span> Dog = &#123;</span><br><span class="line">       words:<span class="string">'Wang'</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//将this的指向改变成了Dog</span></span><br><span class="line">   Pet.speak.call(Dog, <span class="string">'Speak'</span>); <span class="comment">//结果： SpeakWang</span></span><br></pre></td></tr></table></figure>
+<h1 id="apply"><a href="#apply" class="headerlink" title="apply()"></a>apply()</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Pet</span>(<span class="params">words</span>)</span>&#123;</span><br><span class="line">       <span class="keyword">this</span>.words = words;</span><br><span class="line">       <span class="keyword">this</span>.speak = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           <span class="built_in">console</span>.log( <span class="keyword">this</span>.words)</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">Dog</span>(<span class="params">words</span>)</span>&#123;</span><br><span class="line">       <span class="comment">//Pet.call(this, words); //结果： Wang</span></span><br><span class="line">      Pet.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>); <span class="comment">//结果： Wang</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">var</span> dog = <span class="keyword">new</span> Dog(<span class="string">'Wang'</span>);</span><br><span class="line">   dog.speak();</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://maofuling.github.io/maofuling.github.io/2019/01/05/call，bind，apply/" data-id="cjsx5kaqn0003o0td4cdane9o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/maofuling.github.io/2019/01/08/vue音乐播放器里遇到的知识/vue音乐播放器里遇到的知识/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          vue音乐播放器里遇到的知识
+        
+      </div>
+    </a>
+  
+  
+    <a href="/maofuling.github.io/2019/01/04/移动端布局小结/移动端布局小结/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">移动端布局小结</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
